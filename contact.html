@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Nigerian Defence Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header>
+    <img src="logo.png" alt="NDA Logo" width="80" />
+    <h1>Nigerian Defence Academy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="directorates.html">Directorates</a>
+      <a href="academics.html">Academics</a>
+      <a href="news.html">News &amp; Events</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content area -->
+  <main>
+    <section class="contact-intro">
+      <h2>Get in Touch</h2>
+      <p>If you have any questions about admissions, courses, or events, please fill out the form below and we’ll get back to you as soon as possible.</p>
+    </section>
+
+    <!-- Enquiry form using Formspree -->
+    <section class="contact-form">
+      <form action=".https://formspree.io/f/mvgrzywd" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required /><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="_replyto" required /><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" /><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+        <!-- prevent spam via a honeypot field -->
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nigerian Defence Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
